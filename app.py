@@ -9,8 +9,9 @@ from sklearn.preprocessing import StandardScaler
 app = Flask(__name__)
 
 # Load models
-pickle_in = bz2.BZ2File(os.path.join('model', 'classification.pkl'), 'rb')
-R_pickle_in = bz2.BZ2File(os.path.join('model', 'regression.pkl'), 'rb')
+pickle_in = bz2.BZ2File('classification.pkl', 'rb')
+R_pickle_in = bz2.BZ2File('regression.pkl', 'rb')
+
 model_C = pickle.load(pickle_in)
 model_R = pickle.load(R_pickle_in)
 
