@@ -5,6 +5,5 @@ uvicorn
 Flask 
 numpy
 pandas
-pickle
 sklearn
 bz2
