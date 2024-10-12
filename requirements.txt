@@ -5,5 +5,5 @@ uvicorn
 Flask 
 numpy
 pandas
-sklearn
+scikit-learn
 bz2
